@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="navbar.css">
+</head>
+<body>
+    <div id="navbar-container"></div>
+    <div class="body">
+    <div class="signup-container">
+        <div class="signup-login">
+            <h1>Sign-up</h1>
+            <h5>Already Have a account ?</h5>
+            Login
+        </div>
+        
+        <div class="signup-forms">
+            <label for="roles">Role:</label>
+            <div class="signup-forms-items">
+                <select name="roles" id="roles" required>
+                <option value="" disabled selected>Select Role</option>
+                <option value="doctor">Doctor</option>
+                <option value="patient">Student</option>
+                </select>
+            </div>
+            <div class="signup-forms-items">
+            Name:
+            <div>
+                <input type="text" name="name" id="name" placeholder="Enter your name">
+            </div>
+            </div>
+            <div class="signup-forms-items">
+            Phone:
+            <div>
+                <input type="number" name="phone" id="phone" placeholder="Phone Number">
+            </div>
+            </div>
+            <div class="signup-forms-items">
+            Email:
+            <div>
+                <input type="email" name="email" id="email" placeholder="Email Id">
+            </div>
+            </div>
+            <div class="signup-forms-items">
+            Password:
+            <div>
+                <input type="password" name="password" id="password" placeholder="Enter your password">
+            </div>
+            </div>
+            <form >
+            <button id="sign-up-submit" type="submit">Submit</button>
+            <button id="sign-up-reset" type="submit">Reset</button>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+<script src="index.js"></script>
+</html>
